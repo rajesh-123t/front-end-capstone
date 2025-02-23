@@ -3,7 +3,7 @@ import React from 'react';
 const Nav = () => {
   return (
     <>
-    <ul>
+    <ul className="navigation">
       <li><a href='index.html'>Home</a></li>
       <li><a href='index.html'>About</a></li>
       <li><a href='index.html'>Menu</a></li>

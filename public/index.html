@@ -33,6 +33,106 @@
     <title>React App</title>
   </head>
   <body>
+    <style>
+      /* nav */
+      .navigation{
+        display: inline;
+      }
+      .navigation li{
+        display: inline;
+        margin-right: 15px;
+      }
+      .navigation a{
+        text-decoration: none;
+      }
+      .nav img{
+        margin-right: 20px;
+      }
+      .nav{
+        display:flex;
+        justify-content: center;
+      }
+      /* nav */
+
+      /* hero */
+      .hero-section{
+        display: flex;
+        justify-content: center;
+      }
+      .hero-i1{
+        width: 350px;
+      }
+      .hero-i2{
+        width: 350px;
+      }
+      /* hero */
+
+      /* special */
+      .highlights{
+        max-width: 700px;
+        margin-top: 40px;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "a a b"
+        "c d e";
+        gap:10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .a{
+        grid-area: a;
+      }
+      .b{
+        grid-area: b;
+      }
+      .c{
+        grid-area: c;
+      }
+      .d{
+        grid-area: d;
+      }
+      .e{
+        grid-area: e;
+      }
+      /* special */
+
+      /* testimonal */
+      .heading{
+        text-align: center;
+      }
+      .container-testimonial{
+        display: flex;
+        justify-content: center;
+      }
+      .rating{
+        width: 160px;
+        margin-right: 20px;
+        background-color: aqua;
+      }
+      /* testimonal */
+
+      /* about */
+      .about{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .item-about{
+        margin-top: 150px;
+        width: 360px;
+      }
+      .pos{
+        position: relative;
+      }
+      /* about */
+
+      /* footer */
+      
+      /* footer */
+      
+    </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

@@ -1,32 +1,36 @@
 import React from 'react';
+import img_hero from '../assets/restauranfood.jpg';
+import img1 from '../assets/greek salad.jpg';
+import img2 from '../assets/bruchetta.svg';
+import img3 from '../assets/lemon dessert.jpg';
+import img_a from '../assets/restaurant.jpg';
+import img_b from '../assets/Mario and Adrian b.jpg';
 const Main = () => {
   return (
     <>
     <div className='hero-section'>
-      <div>
+      <div className='hero-i1'>
         <h1>little lemon</h1>
         <h2>chicago</h2>
         <p>We are a family owned <br/>Mediterranean restaurant,<br/>focused on traditional<br/>recipes served with a mordern<br/>twist.</p>
         <button>reserve a table</button>
       </div>
-      <div>
-        <img/>
+      <div className='hero-i2'>
+        <img src={img_hero} width="100%"
+         height="300px"
+        style={{
+          objectFit:"cover",
+        }}/>
       </div>
     </div>
 
 
-    <div className='highlights'>
-      <div>
-        <h1>This weeks specials!</h1>
-        <button>Online Menu</button>
-
-
-
-
-
-
-        <div>
-            <img/>
+    <div className='highlights-section'>
+      <div className='highlights'>
+        <h1 className='a'>This weeks specials!</h1>
+        <button className='b'>Online Menu</button>
+        <div className='c'>
+            <img src={img1}  style={{width:"100%" ,height:"200px",objectFit:'cover'}}/>
           <div>
             <span>Greek salad</span>
             <span>$12.99</span>
@@ -37,8 +41,8 @@ const Main = () => {
           Order a delivery
         </div>
 
-        <div>
-            <img/>
+        <div className='d'>
+            <img src={img2} style={{width:"100%" ,height:"200px" ,objectFit:'cover'}}/>
           <div>
             <span>Bruchetta</span>
             <span>$12.99</span>
@@ -49,8 +53,8 @@ const Main = () => {
           Order a delivery
         </div>
 
-        <div>
-            <img/>
+        <div className='e'>
+            <img src={img3} style={{width:"100%" ,height:"200px" ,objectFit:'cover'}}/>
           <div>
             <span>lemon Dessert</span>
             <span>$12.99</span>
@@ -65,10 +69,11 @@ const Main = () => {
 
 
     <div className='testimonial'>
-      <h1>
+      <h1 className='heading'>
         testimonial
       </h1>
-      <div className='container-testimonial'>
+  <div className='container-testimonial'>
+
     <div className='rating'>
       <div>
         <span>4.1</span>
@@ -120,19 +125,41 @@ const Main = () => {
 
 
 
-    </div>
+  </div>
     </div>
 
     <div className='about'>
-      <div>
+      <div className='item-about'>
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
       </div>
-      <div>
-        <img/>
-        <img/>
+      <div className='item-about pos'>
+        <img src={img_a} 
+        style={
+          {
+            width:'200px',
+            height:'300px',
+            objectFit:'cover',
+            position:'absolute',
+            bottom:'50px',
+            left:"90px",
+            
+          }
+          }/>
+        <img src={img_b}
+        style={
+          {
+            width:'200px',
+            height:'300px',
+            objectFit:'cover',
+            position:'absolute',
+            bottom:'100px',
+            left:"140px",
+          }
+          }
+        />
       </div>
     </div>
     </>
