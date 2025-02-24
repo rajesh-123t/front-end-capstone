@@ -8,13 +8,9 @@ function App() {
     <header>
     <Nav_section/>
     </header>
-
-
     <main>
     <Main/>
     </main>
-
-    
     <footer>
     <Footer_section/>
     </footer>
