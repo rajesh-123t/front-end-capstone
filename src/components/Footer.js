@@ -1,5 +1,6 @@
 import React from 'react';
 import footer from '../assets/restauranfood.jpg';
+import Footer_item from './Footer_item';
 const Footer = () => {
   return (
     <>
@@ -7,37 +8,9 @@ const Footer = () => {
     <div className='footer-item'>
       <img src={footer} width="100%"/>
     </div>
-
-    <div className='footer-item'>
-      <h1>Doormat Navigation</h1>
-      <div>
-        <button>Home</button><br/>
-        <button>About</button><br/>
-        <button>menu</button><br/>
-        <button>Reservations</button><br/>
-        <button>Order Online</button><br/>
-        <button>Login</button><br/>
-      </div>
-    </div>
-
-    <div className='footer-item'>
-      <h1>Contact</h1>
-      <div>
-        <button>Address</button><br/>
-        <button>phone number</button><br/>
-        <button>menu</button><br/>
-      </div>
-    </div>
-
-    <div className='footer-item'>
-      <h1>Social Media Links</h1>
-      <div>
-        <button>Address</button><br/>
-        <button>phone number</button><br/>
-        <button>menu</button><br/>
-      </div>
-    </div>
-
+    <Footer_item title="Doormat Navigation" items={["Home","About","Menu","Reservation","order online","login"]}/>
+    <Footer_item title="contact" items={["adress","phone number","menu"]}/>
+    <Footer_item title="social media links" items={["adress","phone number","menu"]}/>
   </div>
     </>
   );
