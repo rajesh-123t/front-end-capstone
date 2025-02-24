@@ -1,12 +1,12 @@
 import React from 'react';
 import footer from '../assets/restauranfood.jpg';
 import Footer_item from './Footer_item';
-const Footer = () => {
+const Footer_section = () => {
   return (
     <>
     <div className='footer'>
     <div className='footer-item'>
-      <img src={footer} width="100%"/>
+      <img src={footer} width="100%" height="200px" style={{objectFit:'cover'}}/>
     </div>
     <Footer_item title="Doormat Navigation" items={["Home","About","Menu","Reservation","order online","login"]}/>
     <Footer_item title="contact" items={["adress","phone number","menu"]}/>
@@ -16,4 +16,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer_section;
